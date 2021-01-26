@@ -1,5 +1,7 @@
 package pl.sda.tdd;
 
+import java.util.Scanner;
+
 public class KalkulatorWieku {
 
 
@@ -64,4 +66,15 @@ public class KalkulatorWieku {
             throw new RuntimeException("Wybrana data jest niepoprawna");
         }
     }
+
+    public static void main(String[] args) {
+        KalkulatorWieku kalkulatorWieku = new KalkulatorWieku();
+//        Scanner scanner = new Scanner(System.in);
+
+        int testWiek = kalkulatorWieku.obliczWiek("16-10-1990", "26-01-2021");
+
+        System.out.printf("Obliczony wiek to: %d", testWiek);
+
+    }
+
 }
